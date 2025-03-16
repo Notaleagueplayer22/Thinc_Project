@@ -5,16 +5,26 @@
         <meta name = "description" content="This is our thinc project">
         <link rel="stylesheet" href="Style.css">
         <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     </head>
     <body>
-        <header>
-            <div id = "top-bar">
-                <img src="" alt="Site-Icon">
-                <div id = "topbar-link">
-                    <a href="">log in/Register</a>
-                    <a href="">report</a>
+        <div class="full-web">
+            <div class="sidebar">
+                <div class="profile-info">
+                    <img src="assets/profile-icon.png" alt="profile-icon">
+                    <button type="button" class="change-profile-button">Change Profile</button>
+
+                    <div class="user-detail">
+                        <div class="user-detail-inner">
+                            <div>
+                                <span class="user-detail-sign">Name :</span>
+                                <span class="user-detail-info">673132XXXX</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+<<<<<<< HEAD:Front Page.htm
             <nav>
                 <button id = "side-tap-opener">
                     <img src="assets/side-tab-opener-icon.png" alt="side-tap-opener">
@@ -102,9 +112,140 @@
 
 
 
+=======
+            <div class="main-control">
+                <header>
+                    <div id = "top-bar">
+                        <img src="" alt="Site-Icon" class="logo-img">
+                        <div id = "topbar-link">
+                            <a href="" class="report-anchor">Report</a>
+                            <a href="">Login/Register</a>
+                        </div>
+                    </div>
+                    <nav id = "nav-bar">
+                        <div class="home-burgur">
+                            <button id = "side-tap-opener">
+                                <img src="assets/side-tab-opener-icon.png" alt="side-tap-opener">
+                            </button>
+                            <a href="">
+                                <img src="assets/home-icon.png" alt="home Icon">
+                            </a>
+                            <span class="home-text">Home</span>
+                        </div>
+                        <div class="year-select">
+                            <a href="">Year 1</a>
+                            <a href="">Year 2</a>
+                            <a href="">Year 3</a>
+                            <a href="">Year 4</a>
+                        </div>
+                    </nav>
+                </header>
+        
+                <main class="main-box">
+                    <div class="first-layer">
+                        <div class="announcement-box">
+                            <div id = "anno">
+                                <img src="assets/announcement-icon.png" alt="announcement-icon" class="box-icon">
+                                <span class="box-sign">Announcement</span>
+                            </div>
+                            <div class="announcement-outer">
+                                <section id = "announcement">
+                                    <img src="" alt="announcement pic">
+                                </section>
+                            </div>
+                        </div>
+                        <div class="promotion-box">
+                            <div id = "promo">
+                                <img src="assets/Promotion-icon.png" alt="promotion-icon" class="box-icon">
+                                <span class="box-sign">Promotion</span>
+                            </div>
+                            <div class="promotion-outer">
+                                <section id = "Promotion">
+                                    <img src="" alt="Promotion pic">
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="second-layer">
+                        <div id = "Interesting-section">
+                            <div class="interesting-sign">
+                                <img src="assets/blog-icon.png" alt="blog-icon" class="box-icon">
+                                <span class="box-sign">Interesting Blog</span>
+                            </div>                    
+                            <div id = "big-blog">
+                                <section class = "Interesting-blog">
+                                    <span class="interesting-username">อันนี้ใส่ Username</span>
+                                    <div class="detail">
+                                        <div class="subject-detail">
+                                            <span>subject</span>
+                                            <button class = "button1" type="button">progmeth</button>
+                                        </div>
+                                        <div class="info-detail">
+                                            <span>info</span>
+                                            <button class = "button2" type="button">year 2</button>
+                                        </div>
+                                        <div class="about-detail">
+                                            <span>about</span>
+                                            <span class="subject-about">this subject is so shit</span>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class = "Interesting-blog">
+                                    <span class="interesting-username">อันนี้ใส่ Username</span>
+                                    <div class="detail">
+                                        <div class="subject-detail">
+                                            <span>subject</span>
+                                            <button class = "button1" type="button">progmeth</button>
+                                        </div>
+                                        <div class="info-detail">
+                                            <span>info</span>
+                                            <button class = "button2" type="button">year 2</button>
+                                        </div>
+                                        <div class="about-detail">
+                                            <span>about</span>
+                                            <span class="subject-about">this subject is so shit</span>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="activity-box">
+                            <section id = "activity-club">
+                                <span class="activity-sign">
+                                    ACTIVITY CLUB
+                                </span>
+                                <div class="activity-inner">
+                                    <div id = "about">
+                                        <button type="button">ALL</button>
+                                        <button type="button">INTANIA</button>
+                                        <button type="button">CHULA</button>
+                                    </div>
+                                    <div id = "club-list">
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+        
+                </main>
+            </div>        
+        </div>
+>>>>>>> f58e235c2bc13981783e5c715662fb764500826e:ThincHTML.htm
 
         <footer>
-            
+            <span class="copyright">COPYRIGHT...</span>
         </footer>
+
+        <script>
+            const sidebar = document.querySelector('.sidebar');
+            const fullweb = document.querySelector('.full-web');
+            const sideTapOpener = document.getElementById('side-tap-opener');
+
+            sideTapOpener.addEventListener('click', () => {
+                sidebar.classList.toggle('show');
+                fullweb.classList.toggle('show');
+                console.log('clicked');
+            });
+        </script>
     </body>
 </html>
