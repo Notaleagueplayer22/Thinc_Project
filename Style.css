@@ -251,3 +251,45 @@ section {
     width: 22px;
     height: 22px;
 }
+
+.each-playlist {
+    margin-top: 80px;
+    margin-left: 0px;
+    display: inline-block;
+    width: 640px;
+    height: 240px;
+    box-shadow: none;
+    text-align: right;
+    border: none;
+}
+
+.each-playlist * {
+    display: inline-block;
+    margin: 0px;
+}
+
+.each-playlist .playlist-box {
+    background-color: #94abe0;
+    border-radius: 35px;
+    border: 3.6px solid #2750ae;
+    width: 440px;
+    height: 240px;
+    margin-left: 15px;
+    margin-top: 0px;
+    text-align: left;
+}
+
+.each-playlist .playlist-box .playlist-image {
+    width: 160px;
+    height: 160px;
+    display: inline-block;
+    border-radius: 35px;
+    background-color: white;
+    margin: 40px;
+}
+
+.each-playlist .playlist-box .playlist-description {
+    display: inline-block;
+    width: 50%;
+    
+}
