@@ -1,0 +1,59 @@
+
+main {
+    display: flex;
+    flex-direction: row; /* Ensures items are placed in a row (left to right) */
+    justify-content: space-between; /* Spaces elements apart */
+    align-items: stretch; /* Ensures both elements take full height */
+    width: 100%; /* Full width */
+    height: 100vh; /* Full viewport height */
+}
+
+.side-tab-box {
+    width: 200px;
+    height: 300px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    background: #FAFAFA;
+}
+
+.side-tab-box .subject-logo {
+    width: 100%;
+    height: 234px;
+    text-align: center;
+}
+
+.side-tab-box img {
+
+}
+
+.side-tab-box button {
+    width: 100%;
+    height: 70px;
+    border: none;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+.main-panel {
+    flex: 1; /* Takes the remaining space */
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    background: #FAFAFA;
+}
+
+.main-panel .clip-display-area {
+    height: 600px;
+}
+
+.comment-section .comment-box {
+    display: inline-block;
+    background-color: white;
+}
+
+.comment-section .comment-box * {
+    margin: 10px;
+}

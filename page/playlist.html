@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Thinc Project</title>
+        <meta name = "description" content="This is our thinc project">
+        <link rel="stylesheet" href="playlist-style.css">
+        <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    </head>
+    <body>
+        <div class="full-web">
+            <div class="sidebar">
+                <div class="profile-info">
+                    <img src="assets/profile-icon.png" alt="profile-icon">
+                    <button type="button" class="change-profile-button">Change Profile</button>
+
+                    <div class="user-detail">
+                        <div class="user-detail-inner">
+                            <div>
+                                <span class="user-detail-sign">Name :</span>
+                                <span class="user-detail-info">673132XXXX</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <button id = "side-tap-opener">
+                    <img src="assets/side-tab-opener-icon.png" alt="side-tap-opener">
+                </button>
+                <a href="">
+                    <img src="assets/home-icon.png" alt="home Icon">
+                </a>
+                home
+                <div id = "nav-links">
+                    <ul>
+                        <li><a href="">year 1</a></li>
+                        <li><a href="">year 2</a></li>
+                        <li><a href="">year 3</a></li>
+                        <li><a href="">year 4</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <main>
+            <section class = "side-tab-box">
+                <div class = "subject-logo">
+                    <a href="">
+                        <img src="" alt="subject-logo">
+                    </a>
+                    <h2>subject name</h2>
+                </div>
+                <div class="side-tab">
+                    <button type="button" class="clip-button">Clip-name</button>
+                    <button type="button" class="clip-button">Clip-name</button>
+                    <button type="button" class="clip-button">Clip-name</button>
+                    <button type="button" class="clip-button">Clip-name</button>
+                    <button type="button" class="clip-button">Clip-name</button>
+                </div>
+            </section>
+            <section class = "main-panel">
+                <div class = "clip-display-area">
+                    <h1>this is clip</h1>
+                    <img src="" alt="place a video here">
+                </div>
+                <div class = "comment-section">
+                    <div class = "comment-box">
+                        <img src="" alt="commenter-profile">
+                        <h4>commentor name</h4>
+                        <br>
+                        <h5>this is a comment</h5>
+                    </div>
+                    <h5>this is so wonderful</h5>
+                </div>
+            </section>
+
+
+
+
+
+
+
+
+
+        </main>
+
+
+
+
+
+
+
+        <script>
+            const sidebar = document.querySelector('.sidebar');
+            const fullweb = document.querySelector('.full-web');
+            const sideTapOpener = document.getElementById('side-tap-opener');
+
+            sideTapOpener.addEventListener('click', () => {
+                sidebar.classList.toggle('show');
+                fullweb.classList.toggle('show');
+                console.log('clicked');
+            });
+        </script>
+    </body>
+</html>
