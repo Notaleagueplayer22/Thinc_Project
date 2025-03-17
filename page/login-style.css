@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+body {
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('../assets/login-background-image.jpg');
+    background-size: 135vw; /* Cover the entire viewport */
+    background-repeat: no-repeat; /* Prevent repeating */
+    background-position: -30vw 0vh;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Anuphan';
+    display: flex;
+    flex-direction: column;
+}
+
+body>* {
+    margin: 0px 50px;
+}
+
+.project-logo-box {
+    margin-top: 50px;
+}
+
+.project-logo-box>* {
+    font-size: 25px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+main>div {
+    border: solid #982B1C;
+    border-radius: 25px;
+    background: linear-gradient(rgba(152, 43, 28, 0.5), rgba(152, 43, 28, 0.5));
+    height: 300px;
+    width: 400px;
+    padding: 20px;
+}
+
+main>div>form {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.signin-head {
+    font-size: 25px;
+}
+
+.signin-form>input{
+    height: 35px;
+    font-size: 17px;
+    margin: 10px 0px;
+    border: 0;
+    border-radius: 5px;
+}
+
+.remember-me-box {
+    margin-bottom: 10px;
+}
+
+.remember-me-box * {
+    margin: 0;
+    margin-right: 3px;
+}
+
+main>div>form button{
+    height: 35px;
+    font-size: 17px;
+    border: 0;
+    border-radius: 5px;
+    transition: all 0.3s ease-out;
+}
+
+main>div>form button:hover{
+    color: #fff;
+    background-color: #982B1C;
+}
+
+.signup-box {
+    margin-top: 10px;
+}
+
+.signup-box a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease-out;
+}
+
+.signup-box a:hover {
+    color: #982B1C;
+}
