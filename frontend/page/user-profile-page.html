@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang = "en">
     <head>
-        <link rel="stylesheet" href="home-page-style.css">
+        <link rel="stylesheet" href="user-profile-page-style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Delius&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet"
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Delius&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet"
     </head>
     <body>
         <header class="full-web">
@@ -24,10 +24,10 @@
                 </div>
             </div>
             <section id = "top-bar">
-                <a href="home-page.html"><img src="" alt="web-logo" class="logo-img"></a>
+                <a href="home-page.html"><img src="" alt="web-logo" class="logo-img"></a> <!------------------->
                 <div id = "topbar-link">
-                    <a href="">report</a> 
-                    <a href="login.html">log in</a>
+                    <a href="">report</a> <!------------------->
+                    <a href="login.html">log in</a> 
                 </div>
             </section>
             <nav>
@@ -35,37 +35,33 @@
                     <button id = "side-tab-opener">
                         <img src="page-assets/side-tab-opener-icon.png" alt="side-tap-opener">
                     </button>
-                    <a href="home-page.html">
+                    <a href="">
                         <img src="page-assets/home-icon.png" alt="home Icon">
                     </a>
                     home
                 </div>
+                <div id = "right-side">
+                    <a href="">สรุปเนื้อหา</a>
+                    <a href="add-playlist-page.html">PLAYLIST</a>
+                    <a href="exercise-page.html">แบบฝึกหัด</a>
+                    <a href="">ROADMAP</a>
+                    <a href="">ไฟล์เนื้อหา</a>
+                </div>
             </nav>
         </header>
         <main>
-            <section class="second-nav-bar">
-                <h2>HOME</h2>
-            </section>
-            <section class="main-area">
-                <div id = "top">
-                    <div class = "content-box">
-                        <a href="">สรุปเนื้อหา</a>
-                    </div>
-                    <div class = "content-box">
-                        <a href="add-playlist-page.html">PLAYLIST</a>
-                    </div>
-                    <div class = "content-box">
-                        <a href="exercise-page.html">แบบฝึกหัด</a>
-                    </div>
+            <section class = "user-description"> 
+                <div class = "profile-picture">
+                    <img src="page-assets/user-icon.png" alt="user-icon">
                 </div>
-                    <div id = "bottom">
-                    <div class = "content-box">
-                        <a href="">ROADMAP</a>
-                    </div>
-                    <div class = "content-box">
-                        <a href="">ไฟล์เนื้อหา</a>
-                    </div>
-                </div>  
+                <div class = "description-box">
+                    <h2>Username</h2>
+                    <h4 class = "description">description</h4>
+                    <button class="follow-button">follow</button>
+                </div>
+            </section>
+            <section id = "activity">
+                <h2>No recent activity</h2>
             </section>
         </main>
     </body>
