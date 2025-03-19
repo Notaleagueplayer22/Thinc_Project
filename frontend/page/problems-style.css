@@ -181,6 +181,26 @@ body {
     flex-direction: column;
 }
 
+.second-nav-bar {
+    margin: 0px;
+    background-color: #9CC7FF;
+    width: 100%;
+    height: 184px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.second-nav-bar #filter {
+    margin-right: 100px;
+}
+
+.second-nav-bar h2 {
+    display: inline-block;
+    margin-left: 100px;
+    font-size: 48px;
+}
 /*----------------------------------------------------------------------------*/
 h1, h2, h3, h4, h5, h6{
     margin: 0px;
@@ -367,10 +387,8 @@ main {
 
 .section .likes{
     display: flex;
-}
-
-.section .likes h5 {
-    margin-left: 5px;
+    background: none;
+    border: none;
 }
 
 .main-area .display-area .exercise-box button {
