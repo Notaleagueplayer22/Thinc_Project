@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Thinc Project</title>
+        <meta name = "description" content="This is our thinc project">
+        <link rel="stylesheet" href="problems-style.css">
+        <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <div class="full-web">
+            <div class="sidebar">
+                <div class="profile-info">
+                    <img src="../assets/profile-icon.png" alt="profile-icon">
+                    <button type="button" class="change-profile-button">Change Profile</button>
+
+                    <div class="user-detail">
+                        <div class="user-detail-inner">
+                            <div>
+                                <span class="user-detail-sign">Name :</span>
+                                <span class="user-detail-info">673132XXXX</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-control">
+                <header>
+                    <div id = "top-bar">
+                        <img src="" alt="Site-Icon" class="logo-img">
+                        <div id = "topbar-link">
+                            <a href="" class="report-anchor">Report</a>
+                            <a href="">Login/Register</a>
+                        </div>
+                    </div>
+                    <nav id = "nav-bar">
+                        <div class="home-burgur">
+                            <button id = "side-tap-opener">
+                                <img src="../assets/side-tab-opener-icon.png" alt="side-tap-opener">
+                            </button>
+                            <a href="">
+                                <img src="../assets/home-icon.png" alt="home Icon">
+                            </a>
+                            <span class="home-text">Home</span>
+                        </div>
+                    </nav>
+                </header>
+            </div>
+        </div>
+
+        <main>
+            <section class="main-area">
+                <div class = "display-area">
+                    <button type="button" id = "add-button">+ ADD YOURS</button>
+                    <div class="exercise-box">
+                        <h4>โจทย์ xxxx โดย P'xxxx</h4>
+                        <div class="big-section">
+                            <div class = "section">
+                                <h5>ยอดถูกใจ</h5>
+                                <div class="likes">
+                                    <img src="page-assets/like-icon.png" alt="like-icon">
+                                    <h5>xxxx</h5>
+                                </div>
+                            </div>
+                            <div class = "section"> 
+                                <h5>Tags</h5>
+                                <button type = "button" class = "button-1">xxxx</button>
+                                <button type = "button" class = "button-2">xxxx</button>
+                                <button type = "button" class = "button-3">xxxx</button>
+                            </div>
+                            <div class = "section">
+                                <h5>Author</h5>
+                                <h5>Username: xxxx </h5>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="exercise-box">
+                        <h4>โจทย์ xxxx โดย P'xxxx</h4>
+                        <div class="big-section">
+                            <div class = "section">
+                                <h5>ยอดถูกใจ</h5>
+                                <div class="likes">
+                                    <img src="page-assets/like-icon.png" alt="like-icon">
+                                    <h5>xxxx</h5>
+                                </div>
+                            </div>
+                            <div class = "section"> 
+                                <h5>Tags</h5>
+                                <button type = "button" class = "button-1">xxxx</button>
+                                <button type = "button" class = "button-2">xxxx</button>
+                                <button type = "button" class = "button-3">xxxx</button>
+                            </div>
+                            <div class = "section">
+                                <h5>Author</h5>
+                                <h5>Username: xxxx </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="problem-detail">
+                <span class="problem-name">โจทย์ Calculus by P'xxx</span>
+                <span class="author-name">Posted by: USERNAME</span>
+                <img src="" alt="" class="problem-preview">
+                <div class="attachment-propoties">
+                    <div class="video-action">
+                        <button type="button" class="likes">
+                            <box-icon type='solid' name='like'></box-icon>
+                            <span class="likes-count">99999</span>
+                        </button>
+                        <button type="button" class="save">
+                            <box-icon name='star' type='solid' ></box-icon>
+                            <span class="save-text">Save</span>
+                        </button>
+                        <button type="button" class="attachment">
+                            <box-icon name='paperclip'></box-icon>
+                            <span class="attachment-text">Attachment</span>
+                        </button>
+                    </div>
+                    </div>
+                    <div class = "comment-section">
+                        <form action="" class="comment-form">
+                            <span class="username">USERNAME: XXXX XXXXXX</span>
+                            <div class="comment-input-box">
+                                <input type="text" placeholder="ADD COMMENT HERE" class="comment-text">
+                                <button>
+                                    <i class='bx bx-upvote' ></i>
+                                </button>
+                            </div>
+                        </form>
+                        <div class="comment-box">
+                            <span class="username">USERNAME: XXXX XXXXXX</span>
+                            <div class="comment-text-box">
+                                <div class="comment-like-amount">
+                                    <span>ยอดถูกใจ</span>
+                                    <div>
+                                        <i class='bx bx-like' ></i>
+                                        <span>9999</span>
+                                    </div>
+                                </div>
+                                <span>this is comment</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <script>
+            const sidebar = document.querySelector('.sidebar');
+            const fullweb = document.querySelector('.full-web');
+            const sideTapOpener = document.getElementById('side-tap-opener');
+
+            sideTapOpener.addEventListener('click', () => {
+                sidebar.classList.toggle('show');
+                fullweb.classList.toggle('show');
+                console.log('clicked');
+            });
+        </script>
+    </body>
+</html>
