@@ -1,9 +1,13 @@
 * {
     margin: 0px;
-    font-family: "Inter", sans-serif;
+    font-family: "poppins-regular"
 }
 
-
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
 
 nav {
     display: flex;
@@ -208,19 +212,6 @@ nav #right-side a:hover::after {
 #side-tap-opener {
     background: transparent;
     border: 0;
-}
-
-.year-select {
-    display: flex;
-    justify-content: space-around;
-    width: 25%;
-    min-width: 300px;
-    align-items: center;
-}
-
-.year-select>a {
-    text-decoration: none;
-    color: #000;
 }
 
 .main-box {
