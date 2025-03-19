@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
     <head>
+        <title>Thinc Project</title>
+        <meta name = "description" content="This is our thinc project">
         <link rel="stylesheet" href="home-page-style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Delius&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet"
+        <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     </head>
     <body>
-        <header class="full-web">
+        <div class="full-web">
             <div class="sidebar">
                 <div class="profile-info">
-                    <img src="assets/profile-icon.png" alt="profile-icon">
+                    <img src="../assets/profile-icon.png" alt="profile-icon">
                     <button type="button" class="change-profile-button">Change Profile</button>
 
                     <div class="user-detail">
@@ -23,25 +25,39 @@
                     </div>
                 </div>
             </div>
-            <section id = "top-bar">
-                <a href="home-page.html"><img src="" alt="web-logo" class="logo-img"></a>
-                <div id = "topbar-link">
-                    <a href="">report</a> 
-                    <a href="login.html">log in</a>
-                </div>
-            </section>
-            <nav>
-                <div id = "left-side">
-                    <button id = "side-tab-opener">
-                        <img src="page-assets/side-tab-opener-icon.png" alt="side-tap-opener">
-                    </button>
-                    <a href="home-page.html">
-                        <img src="page-assets/home-icon.png" alt="home Icon">
-                    </a>
-                    home
-                </div>
-            </nav>
-        </header>
+            <div class="main-control">
+                <header>
+                    <div id = "top-bar">
+                        <img src="" alt="Site-Icon" class="logo-img">
+                        <div id = "topbar-link">
+                            <a href="" class="report-anchor">Report</a>
+                            <a href="">Login/Register</a>
+                        </div>
+                    </div>
+                    <nav id = "nav-bar">
+                        <div class="home-burgur">
+                            <button id = "side-tap-opener">
+                                <img src="../assets/side-tab-opener-icon.png" alt="side-tap-opener">
+                            </button>
+                            <a href="">
+                                <img src="../assets/home-icon.png" alt="home Icon">
+                            </a>
+                            <span class="home-text">Home</span>
+                        </div>
+<!------------------------- อันนี้อันใหม่ -------------------------------->
+                        <div id = "right-side">
+                    <a href="review.html">สรุปเนื้อหา</a>
+                    <a href="add-playlist-page.html">PLAYLIST</a>
+                    <a href="problems.html">แบบฝึกหัด</a>
+                    <a href="roadmap.html">ROADMAP</a>
+                    <a href="content.html">ไฟล์เนื้อหา</a>
+                        </div>
+<!--------------------------------------------------------------------------->
+                    </nav>
+                </header>
+            </div>
+        </div>
+
         <main>
             <section class="second-nav-bar">
                 <h2>HOME</h2>
@@ -49,24 +65,68 @@
             <section class="main-area">
                 <div id = "top">
                     <div class = "content-box">
-                        <a href="">สรุปเนื้อหา</a>
+                        <a href="review.html">สรุปเนื้อหา</a>
                     </div>
                     <div class = "content-box">
                         <a href="add-playlist-page.html">PLAYLIST</a>
                     </div>
                     <div class = "content-box">
-                        <a href="exercise-page.html">แบบฝึกหัด</a>
+                        <a href="problems.html">แบบฝึกหัด</a>
                     </div>
                 </div>
                     <div id = "bottom">
                     <div class = "content-box">
-                        <a href="">ROADMAP</a>
+                        <a href="roadmap.html">ROADMAP</a>
                     </div>
                     <div class = "content-box">
-                        <a href="">ไฟล์เนื้อหา</a>
+                        <a href="content.html">ไฟล์เนื้อหา</a>
                     </div>
                 </div>  
             </section>
         </main>
+
+
+
+
+
+
+
+        <script>
+            const sidebar = document.querySelector('.sidebar');
+            const fullweb = document.querySelector('.full-web');
+            const sideTapOpener = document.getElementById('side-tap-opener');
+
+            sideTapOpener.addEventListener('click', () => {
+                sidebar.classList.toggle('show');
+                fullweb.classList.toggle('show');
+                console.log('clicked');
+            });
+        </script>
+
+        <script>
+            const likeButton = document.querySelector('.likes');
+            let isLiked = false;
+
+            likeButton.addEventListener('click', () => {
+                if (!isLiked) {
+                    likeButton.classList.add('liked');
+                    isLiked = true;
+                } else {
+                    likeButton.classList.remove('liked');
+                    isLiked = false;
+                }
+            });
+        </script>
+
+    <script>
+        const playlistButtons = document.querySelectorAll('.video-group>button'); // Select ALL buttons
+        
+        playlistButtons.forEach(button => { // Loop through each button
+            button.addEventListener('click', () => {
+                const videoList = button.parentElement.querySelector('.video-list'); // Find the list within the same video-group
+                videoList.classList.toggle('show');
+            });
+        });
+    </script>
     </body>
 </html>
