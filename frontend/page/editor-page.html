@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <link rel="stylesheet" href="editor-page-style.css">
+    </head>
+    <body>
+        <header class="full-web">
+            <div class="sidebar">
+                <div class="profile-info">
+                    <img src="assets/profile-icon.png" alt="profile-icon">
+                    <button type="button" class="change-profile-button">Change Profile</button>
+
+                    <div class="user-detail">
+                        <div class="user-detail-inner">
+                            <div>
+                                <span class="user-detail-sign">Name :</span>
+                                <span class="user-detail-info">673132XXXX</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section id = "top-bar">
+                <a href=""><img src="" alt="web-logo" class="logo-img"></a>
+                <div id = "topbar-link">
+                    <a href="">report</a>
+                    <a href="">log in</a>
+                </div>
+            </section>
+            <nav>
+                <div id = "left-side">
+                    <button id = "side-tab-opener">
+                        <img src="page-assets/side-tab-opener-icon.png" alt="side-tap-opener">
+                    </button>
+                    <a href="home-page.html">
+                        <img src="../assets/home-icon.png" alt="home Icon">
+                    </a>
+                    home
+                </div>
+                <div id = "right-side">
+                    <a href="review.html">สรุปเนื้อหา</a>
+                    <a href="add-playlist-page.html">PLAYLIST</a>
+                    <a href="problems.html">แบบฝึกหัด</a>
+                    <a href="roadmap.html">ROADMAP</a>
+                    <a href="content.html">ไฟล์เนื้อหา</a>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section id="main-box">
+                <div id = "top-part">
+                    <div id = "topic-container">
+                        <input type="text" id = "topic" placeholder="เพิ่มหัวข้อ">
+                    </div>
+                    <div id = "options-container">
+                        <select id="options" name="subject">
+                            <option value="option1">เลือกวิชา</option>
+                            <option value="option2">Gen Phys I</option>
+                            <option value="option3">Gen Phys II</option>
+                            <option value="option4">Gen Chem</option>
+                            <option value="option5">Gen Chem lab</option>
+                            <option value="option6">Gen Phys lab</option>
+                            <option value="option7">Exp Eng</option>
+                            <option value="option8">Expl Eng</option>
+                            <option value="option9">Eng Drawing</option>
+                            <option value="option10">Material</option>
+                            <option value="option11">Calculus</option>
+                        </select>
+                        <select id="options" name="menu">
+                            <option value="option1">เลือกเมนู</option>
+                            <option value="option2">สรุปเนื้อหา</option>
+                            <option value="option3">PLAYLIST</option>
+                            <option value="option4">แบบฝึกหัด</option>
+                            <option value="option5">ROADMAP</option>
+                            <option value="option6">ไฟล์เนื้อหา</option>
+                        </select>
+                        <select id="options" name="test">
+                            <option value="option1">MIDTERM</option>
+                            <option value="option2">FINAL</option>
+                        </select>
+                    </div>
+                
+                </div>
+
+                <div id = "middle-part">
+                    <input type="text" placeholder="คำอธิบายเพิ่มเติม">
+                </div>
+
+                <div id = "bottom-part">
+                    <div id = "left-part">
+                        <button type="button" id = "insert-file-button">
+                            <img src="page-assets/write-icon.png" alt="insert-image" class="button-image">
+                            <h6>Insert Files/URL</h6>
+                        </button>
+                        <button type="button" id = "remove-button">
+                            <img src="page-assets/write-icon.png" alt="remove-image" class="button-image">
+                            <h6>Remove</h6>
+                        </button>
+                    </div>
+                    <button type="button" id="post-button">
+                        <img src="page-assets/write-icon.png" alt="post-image" class="button-image">
+                        <h6>Post</h6>
+                    </button>
+                </div>
+
+            </section>
+        </main>
+        <script>
+            const toggleSwitch = document.getElementById("toggleSwitch");
+            const optionText = document.getElementById("optionText");
+        
+            toggleSwitch.addEventListener("change", function() {
+                optionText.textContent = this.checked ? "midterm" : "final";
+            });
+        </script>
+    </body>
+</html>

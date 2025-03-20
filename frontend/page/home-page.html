@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Thinc Project</title>
+        <meta name = "description" content="This is our thinc project">
+        <link rel="stylesheet" href="home-page-style.css">
+        <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <div class="full-web">
+            <div class="sidebar">
+                <div class="profile-info">
+                    <img src="../assets/profile-icon.png" alt="profile-icon">
+                    <button type="button" class="change-profile-button">Change Profile</button>
+
+                    <div class="user-detail">
+                        <div class="user-detail-inner">
+                            <div>
+                                <span class="user-detail-sign">Name :</span>
+                                <span class="user-detail-info">673132XXXX</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-control">
+                <header>
+                    <div id = "top-bar">
+                        <img src="" alt="Site-Icon" class="logo-img">
+                        <div id = "topbar-link">
+                            <a href="" class="report-anchor">Report</a>
+                            <a href="">Login/Register</a>
+                        </div>
+                    </div>
+                    <nav id = "nav-bar">
+                        <div class="home-burgur">
+                            <button id = "side-tap-opener">
+                                <img src="../assets/side-tab-opener-icon.png" alt="side-tap-opener">
+                            </button>
+                            <a href="home-page.html">
+                                <img src="../assets/home-icon.png" alt="home Icon">
+                            </a>
+                            <span class="home-text">Home</span>
+                        </div>
+<!------------------------- อันนี้อันใหม่ -------------------------------->
+                        <div id = "right-side">
+                    <a href="review.html">สรุปเนื้อหา</a>
+                    <a href="add-playlist-page.html">PLAYLIST</a>
+                    <a href="problems.html">แบบฝึกหัด</a>
+                    <a href="roadmap.html">ROADMAP</a>
+                    <a href="content.html">ไฟล์เนื้อหา</a>
+                        </div>
+<!--------------------------------------------------------------------------->
+                    </nav>
+                </header>
+            </div>
+        </div>
+
+        <main>
+            <section class="second-nav-bar">
+                <h2>HOME</h2>
+            </section>
+            <section class="main-area">
+                <div id = "top">
+                    <div class = "content-box">
+                        <a href="review.html">สรุปเนื้อหา</a>
+                    </div>
+                    <div class = "content-box">
+                        <a href="add-playlist-page.html">PLAYLIST</a>
+                    </div>
+                    <div class = "content-box">
+                        <a href="problems.html">แบบฝึกหัด</a>
+                    </div>
+                </div>
+                    <div id = "bottom">
+                    <div class = "content-box">
+                        <a href="roadmap.html">ROADMAP</a>
+                    </div>
+                    <div class = "content-box">
+                        <a href="content.html">ไฟล์เนื้อหา</a>
+                    </div>
+                </div>  
+            </section>
+        </main>
+
+
+
+
+
+
+
+        <script>
+            const sidebar = document.querySelector('.sidebar');
+            const fullweb = document.querySelector('.full-web');
+            const sideTapOpener = document.getElementById('side-tap-opener');
+
+            sideTapOpener.addEventListener('click', () => {
+                sidebar.classList.toggle('show');
+                fullweb.classList.toggle('show');
+                console.log('clicked');
+            });
+        </script>
+
+        <script>
+            const likeButton = document.querySelector('.likes');
+            let isLiked = false;
+
+            likeButton.addEventListener('click', () => {
+                if (!isLiked) {
+                    likeButton.classList.add('liked');
+                    isLiked = true;
+                } else {
+                    likeButton.classList.remove('liked');
+                    isLiked = false;
+                }
+            });
+        </script>
+
+    <script>
+        const playlistButtons = document.querySelectorAll('.video-group>button'); // Select ALL buttons
+        
+        playlistButtons.forEach(button => { // Loop through each button
+            button.addEventListener('click', () => {
+                const videoList = button.parentElement.querySelector('.video-list'); // Find the list within the same video-group
+                videoList.classList.toggle('show');
+            });
+        });
+    </script>
+    </body>
+</html>

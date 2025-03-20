@@ -1,9 +1,13 @@
 * {
     margin: 0px;
-    font-family: "Inter", sans-serif;
+    font-family: "poppins-regular"
 }
 
-
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
 
 nav {
     display: flex;
@@ -14,9 +18,34 @@ nav {
 
 nav #left-side {
     display: flex;
-
+    width: 569px;
 }
 
+nav #right-side {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 100px;
+}
+
+nav #right-side a::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background: #2750ae;
+    width: 0%;
+    margin: auto;
+    transition: 0.5s;
+}
+nav #right-side a {
+    text-decoration: none;
+    color: #000;
+}
+
+nav #right-side a:hover::after {
+    width: 100%;
+}
 
 .main-control {
     margin-left: 0px;
@@ -185,19 +214,6 @@ nav #left-side {
     border: 0;
 }
 
-.year-select {
-    display: flex;
-    justify-content: space-around;
-    width: 25%;
-    min-width: 300px;
-    align-items: center;
-}
-
-.year-select>a {
-    text-decoration: none;
-    color: #000;
-}
-
 .main-box {
     padding-left: 100px;
     padding-right: 100px;
@@ -357,7 +373,6 @@ main {
     border-radius: 35px;
     display: flex;
     margin: 40px;
-    background-image: ;
     background-color: white;
     justify-content: end;
     align-items: start;
