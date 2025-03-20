@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (response.ok) {
             localStorage.setItem("token", data.token); // เก็บ Token
             alert("Login successful!");
-            window.location.href = "dashboard.html"; // ไปหน้าหลักหลังล็อกอิน
+            window.location.href = "playlist.html"; // ไปหน้าหลักหลังล็อกอิน
         } else {
             alert(data.message);
         }
